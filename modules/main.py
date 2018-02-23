@@ -20,6 +20,8 @@ if __name__ == '__main__':
 	with open("/config_files/devices.yaml", 'r') as ymlfile:
 		cfg = yaml.load(ymlfile)
         dict1=cfg['devices']
+	ob=Napalm_hack()
+	formatob=formatter()
 	for segment in dict1:
 		driver = get_network_driver(segment['device_type'])
 		segment_device_type=segment['device_type']
@@ -27,7 +29,6 @@ if __name__ == '__main__':
         	with driver(segment['name'], 'ntc', 'ntc123') as device:
         		details=device.get_bgp_neighbors_detail()
             	ram=device.get_environment()
-		ob=Napalm_hack()
                 field=ob.compare_ram(ram)
             	shorten,innerlist=ob.flatten(details)
 			routerids=[]
@@ -41,7 +42,7 @@ if __name__ == '__main__':
                 	for key, val in RAMdetails.items():
                         	t.add_row([key, val])
                 	keys=['configured_holdtime','configured_keepalive','connection_state','flap_count','holdtime','last_event','local_address','local_as','remote_address','remote_as','router_id','up']
-                	print Formatter.format_as_table(innerlist,keys,keys)
+                	print formatob.format_as_table(innerlist,keys,keys)
 			print "*"*20
 			print "CONFIG TESTS"
 			print "*"*20
@@ -55,5 +56,5 @@ if __name__ == '__main__':
 			print "Mismatch Details"
 			print "*"*20
 			keys=['interface','local_interface_mtu','remote_interface_mtu','segment_name','Mismatch Details']
-			print format_as_table(mtu_final,keys,keys)
+			print formatob.format_as_table(mtu_final,keys,keys)
 			print "*"*20
