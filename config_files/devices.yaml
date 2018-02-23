@@ -1,0 +1,65 @@
+[eos-leaf1]
+name = eos-leaf1
+device_type = eos
+username = ntc
+password = ntc123
+
+[eos-leaf2]
+name = eos-leaf2
+device_type = eos
+username = ntc
+password = ntc123
+
+[eos-leaf3]
+name = eos-leaf3
+device_type = eos
+username = ntc
+password = ntc123
+
+[eos-leaf4]
+name = eos-leaf4
+device_type = eos
+username = ntc
+password = ntc123
+
+[eos-spine1]
+name = eos-spine1
+device_type = eos
+username = ntc
+password = ntc123
+
+[eos-spine2]
+name = eos-spine2
+device_type = eos
+username = ntc
+password = ntc123
+
+[eos-spine3]
+name = eos-spine3
+device_type = eos
+username = ntc
+password = ntc123
+
+[eos-spine4]
+name = eos-spine4
+device_type = eos
+username = ntc
+password = ntc123
+
+[vmx7]
+name = vmx7
+device_type = junos
+username = ntc
+password = ntc123
+
+[vmx8]
+name = vmx8
+device_type = junos
+username = ntc
+password = ntc123
+
+[vmx9]
+name = vmx9
+device_type = junos
+username = ntc
+password = ntc123
