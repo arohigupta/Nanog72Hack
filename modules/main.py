@@ -27,8 +27,9 @@ if __name__ == '__main__':
         	with driver(segment['name'], 'ntc', 'ntc123') as device:
         		details=device.get_bgp_neighbors_detail()
             	ram=device.get_environment()
-                field=Napalm_hack.compare_ram(ram)
-            	shorten,innerlist=Napalm_hack.flatten(details)
+		ob=Napalm_hack()
+                field=ob.compare_ram(ram)
+            	shorten,innerlist=ob.flatten(details)
 			routerids=[]
 			for ele in innerlist:
 				if ele['router_id']:
@@ -48,7 +49,7 @@ if __name__ == '__main__':
 			mtu_final=[]
 			for ele in routerids:
                 		out_data=device.get_route_to(ele)
-                		mtu_fi=Napalm_hack.outgoing_interface(out_data,ele,segment_device_type,segment_name)
+                		mtu_fi=ob.outgoing_interface(out_data,ele,segment_device_type,segment_name)
 				mtu_final.append(mtu_fi)
 			print "*"*20
 			print "Mismatch Details"
