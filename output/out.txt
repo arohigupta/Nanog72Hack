@@ -1,0 +1,414 @@
+
+
+
+
+
+configured_holdtime configured_keepalive connection_state flap_count holdtime last_event    local_address          local_as remote_address         remote_as router_id  up
+------------------- -------------------- ---------------- ---------- -------- ----------    -------------          -------- --------------         --------- ---------  --
+180                 60                   Established      0          150      RecvKeepAlive 10.16.0.1              65011    10.16.0.0              65001     10.16.32.1 True
+180                 60                   Established      0          150      RecvKeepAlive 10.16.2.1              65011    10.16.2.0              65001     10.16.32.2 True
+180                 60                   Established      0          150      RecvKeepAlive 2001:db8:1:0:10:16:0:1 65011    2001:db8:1:0:10:16::   65001     10.16.32.1 True
+180                 60                   Established      0          150      RecvKeepAlive 2001:db8:1:0:10:16:2:1 65011    2001:db8:1:0:10:16:2:0 65001     10.16.32.2 True
+
+********************
+CONFIG TESTS
+********************
++---------------+----------+
+| Available Ram |  Field   |
++---------------+----------+
+|     Status    | All okay |
+| Available_Ram | 1823412  |
++---------------+----------+
+********************
+Mismatch Details
+********************
+interface local_interface_mtu remote_interface_mtu segment_name Mismatch Details
+--------- ------------------- -------------------- ------------ ----------------
+Ethernet1 1496                1500                 eos-leaf1    MTU interface Mismatch
+Ethernet2 1496                1500                 eos-leaf1    MTU interface Mismatch
+Ethernet1 1496                1500                 eos-leaf1    MTU interface Mismatch
+Ethernet2 1496                1500                 eos-leaf1    MTU interface Mismatch
+
+********************
+
+
+
+
+
+configured_holdtime configured_keepalive connection_state flap_count holdtime last_event    local_address          local_as remote_address         remote_as router_id  up
+------------------- -------------------- ---------------- ---------- -------- ----------    -------------          -------- --------------         --------- ---------  --
+180                 60                   Established      0          180      RecvKeepAlive 10.16.1.1              65012    10.16.1.0              65001     10.16.32.1 True
+180                 60                   Established      0          180      RecvKeepAlive 10.16.3.1              65012    10.16.3.0              65001     10.16.32.2 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:1:0:10:16:1:1 65012    2001:db8:1:0:10:16:1:0 65001     10.16.32.1 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:1:0:10:16:3:1 65012    2001:db8:1:0:10:16:3:0 65001     10.16.32.2 True
+
+********************
+CONFIG TESTS
+********************
++---------------+----------+
+| Available Ram |  Field   |
++---------------+----------+
+|     Status    | All okay |
+| Available_Ram | 1840672  |
++---------------+----------+
+********************
+Mismatch Details
+********************
+interface local_interface_mtu remote_interface_mtu segment_name Mismatch Details
+--------- ------------------- -------------------- ------------ ----------------
+Ethernet1 1500                1500                 eos-leaf2    SWEET!!
+Ethernet2 1500                1500                 eos-leaf2    SWEET!!
+Ethernet1 1500                1500                 eos-leaf2    SWEET!!
+Ethernet2 1500                1500                 eos-leaf2    SWEET!!
+
+********************
+
+
+
+
+
+configured_holdtime configured_keepalive connection_state flap_count holdtime last_event    local_address          local_as remote_address         remote_as router_id  up
+------------------- -------------------- ---------------- ---------- -------- ----------    -------------          -------- --------------         --------- ---------  --
+180                 60                   Established      0          180      RecvKeepAlive 10.17.4.1              65021    10.17.4.0              65002     10.17.32.3 True
+180                 60                   Established      0          180      RecvKeepAlive 10.17.6.1              65021    10.17.6.0              65002     10.17.32.4 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:2:0:10:17:4:1 65021    2001:db8:2:0:10:17:4:0 65002     10.17.32.3 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:2:0:10:17:6:1 65021    2001:db8:2:0:10:17:6:0 65002     10.17.32.4 True
+
+********************
+CONFIG TESTS
+********************
++---------------+----------+
+| Available Ram |  Field   |
++---------------+----------+
+|     Status    | All okay |
+| Available_Ram | 1841576  |
++---------------+----------+
+********************
+Mismatch Details
+********************
+interface local_interface_mtu remote_interface_mtu segment_name Mismatch Details
+--------- ------------------- -------------------- ------------ ----------------
+Ethernet1 1500                1500                 eos-leaf3    SWEET!!
+Ethernet2 1500                1500                 eos-leaf3    SWEET!!
+Ethernet1 1500                1500                 eos-leaf3    SWEET!!
+Ethernet2 1500                1500                 eos-leaf3    SWEET!!
+
+********************
+
+
+
+
+
+configured_holdtime configured_keepalive connection_state flap_count holdtime last_event    local_address          local_as remote_address         remote_as router_id  up
+------------------- -------------------- ---------------- ---------- -------- ----------    -------------          -------- --------------         --------- ---------  --
+180                 60                   Established      0          180      RecvKeepAlive 10.17.5.1              65022    10.17.5.0              65002     10.17.32.3 True
+180                 60                   Established      0          180      RecvKeepAlive 10.17.7.1              65022    10.17.7.0              65002     10.17.32.4 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:2:0:10:17:5:1 65022    2001:db8:2:0:10:17:5:0 65002     10.17.32.3 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:2:0:10:17:7:1 65022    2001:db8:2:0:10:17:7:0 65002     10.17.32.4 True
+
+********************
+CONFIG TESTS
+********************
++---------------+----------+
+| Available Ram |  Field   |
++---------------+----------+
+|     Status    | All okay |
+| Available_Ram | 1843812  |
++---------------+----------+
+********************
+Mismatch Details
+********************
+interface local_interface_mtu remote_interface_mtu segment_name Mismatch Details
+--------- ------------------- -------------------- ------------ ----------------
+Ethernet1 1500                1500                 eos-leaf4    SWEET!!
+Ethernet2 1500                1500                 eos-leaf4    SWEET!!
+Ethernet1 1500                1500                 eos-leaf4    SWEET!!
+Ethernet2 1500                1500                 eos-leaf4    SWEET!!
+
+********************
+
+
+
+
+
+configured_holdtime configured_keepalive connection_state flap_count holdtime last_event    local_address          local_as remote_address         remote_as router_id  up
+------------------- -------------------- ---------------- ---------- -------- ----------    -------------          -------- --------------         --------- ---------  --
+180                 60                   Established      0          90       RecvKeepAlive 10.2.0.1               65001    10.2.0.0               65000     10.255.0.8 True
+180                 60                   Established      0          90       RecvKeepAlive 10.2.1.1               65001    10.2.1.0               65000     10.255.0.9 True
+180                 60                   Established      0          90       RecvKeepAlive 2001:db8::10:2:0:1     65001    2001:db8::10:2:0:0     65000     10.255.0.8 True
+180                 60                   Established      0          90       RecvKeepAlive 2001:db8::10:2:1:1     65001    2001:db8::10:2:1:0     65000     10.255.0.9 True
+180                 60                   Established      0          150      RecvKeepAlive 10.16.0.0              65001    10.16.0.1              65011     10.16.33.1 True
+180                 60                   Established      0          150      RecvKeepAlive 2001:db8:1:0:10:16::   65001    2001:db8:1:0:10:16:0:1 65011     10.16.33.1 True
+180                 60                   Established      0          180      RecvKeepAlive 10.16.1.0              65001    10.16.1.1              65012     10.16.33.2 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:1:0:10:16:1:0 65001    2001:db8:1:0:10:16:1:1 65012     10.16.33.2 True
+
+********************
+CONFIG TESTS
+********************
++---------------+----------+
+| Available Ram |  Field   |
++---------------+----------+
+|     Status    | All okay |
+| Available_Ram | 1838412  |
++---------------+----------+
+********************
+Mismatch Details
+********************
+interface local_interface_mtu remote_interface_mtu segment_name Mismatch Details
+--------- ------------------- -------------------- ------------ ----------------
+Ethernet3 1500                1514                 eos-spine1   MTU interface Mismatch
+Ethernet4 1500                1514                 eos-spine1   MTU interface Mismatch
+Ethernet3 1500                1514                 eos-spine1   MTU interface Mismatch
+Ethernet4 1500                1514                 eos-spine1   MTU interface Mismatch
+Ethernet1 1500                1496                 eos-spine1   MTU interface Mismatch
+Ethernet1 1500                1496                 eos-spine1   MTU interface Mismatch
+Ethernet2 1500                1500                 eos-spine1   SWEET!!
+Ethernet2 1500                1500                 eos-spine1   SWEET!!
+
+********************
+
+
+
+
+
+configured_holdtime configured_keepalive connection_state flap_count holdtime last_event    local_address          local_as remote_address         remote_as router_id  up
+------------------- -------------------- ---------------- ---------- -------- ----------    -------------          -------- --------------         --------- ---------  --
+180                 60                   Established      0          90       RecvKeepAlive 10.2.2.1               65001    10.2.2.0               65000     10.255.0.8 True
+180                 60                                    0          180      Start                                65001    10.2.3.0               65000     0.0.0.0    False
+180                 60                   Established      0          90       RecvKeepAlive 2001:db8::10:2:2:1     65001    2001:db8::10:2:2:0     65000     10.255.0.8 True
+180                 60                                    0          180      Start                                65001    2001:db8::10:2:3:0     65000     0.0.0.0    False
+180                 60                   Established      0          150      RecvKeepAlive 10.16.2.0              65001    10.16.2.1              65011     10.16.33.1 True
+180                 60                   Established      0          150      RecvKeepAlive 2001:db8:1:0:10:16:2:0 65001    2001:db8:1:0:10:16:2:1 65011     10.16.33.1 True
+180                 60                   Established      0          180      RecvKeepAlive 10.16.3.0              65001    10.16.3.1              65012     10.16.33.2 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:1:0:10:16:3:0 65001    2001:db8:1:0:10:16:3:1 65012     10.16.33.2 True
+
+********************
+CONFIG TESTS
+********************
++---------------+----------+
+| Available Ram |  Field   |
++---------------+----------+
+|     Status    | All okay |
+| Available_Ram | 1830140  |
++---------------+----------+
+********************
+Mismatch Details
+********************
+interface local_interface_mtu remote_interface_mtu segment_name Mismatch Details
+--------- ------------------- -------------------- ------------ ----------------
+Ethernet3 1500                1514                 eos-spine2   MTU interface Mismatch
+          1500                0                    eos-spine2   MTU interface Mismatch
+Ethernet3 1500                1514                 eos-spine2   MTU interface Mismatch
+          1500                0                    eos-spine2   MTU interface Mismatch
+Ethernet1 1500                1496                 eos-spine2   MTU interface Mismatch
+Ethernet1 1500                1496                 eos-spine2   MTU interface Mismatch
+Ethernet2 1500                1500                 eos-spine2   SWEET!!
+Ethernet2 1500                1500                 eos-spine2   SWEET!!
+
+********************
+
+
+
+
+
+configured_holdtime configured_keepalive connection_state flap_count holdtime last_event    local_address          local_as remote_address         remote_as router_id  up
+------------------- -------------------- ---------------- ---------- -------- ----------    -------------          -------- --------------         --------- ---------  --
+180                 60                   Established      0          90       RecvKeepAlive 10.2.4.1               65002    10.2.4.0               65000     10.255.0.8 True
+180                 60                   Established      0          90       RecvKeepAlive 10.2.5.1               65002    10.2.5.0               65000     10.255.0.9 True
+180                 60                   Established      0          90       RecvKeepAlive 2001:db8::10:2:4:1     65002    2001:db8::10:2:4:0     65000     10.255.0.8 True
+180                 60                   Established      0          90       RecvKeepAlive 2001:db8::10:2:5:1     65002    2001:db8::10:2:5:0     65000     10.255.0.9 True
+180                 60                   Established      0          180      RecvKeepAlive 10.17.4.0              65002    10.17.4.1              65021     10.17.33.3 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:2:0:10:17:4:0 65002    2001:db8:2:0:10:17:4:1 65021     10.17.33.3 True
+180                 60                   Established      0          180      RecvKeepAlive 10.17.5.0              65002    10.17.5.1              65022     10.17.33.4 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:2:0:10:17:5:0 65002    2001:db8:2:0:10:17:5:1 65022     10.17.33.4 True
+
+********************
+CONFIG TESTS
+********************
++---------------+----------+
+| Available Ram |  Field   |
++---------------+----------+
+|     Status    | All okay |
+| Available_Ram | 1831536  |
++---------------+----------+
+********************
+Mismatch Details
+********************
+interface local_interface_mtu remote_interface_mtu segment_name Mismatch Details
+--------- ------------------- -------------------- ------------ ----------------
+Ethernet3 1500                1514                 eos-spine3   MTU interface Mismatch
+Ethernet4 1500                1514                 eos-spine3   MTU interface Mismatch
+Ethernet3 1500                1514                 eos-spine3   MTU interface Mismatch
+Ethernet4 1500                1514                 eos-spine3   MTU interface Mismatch
+Ethernet1 1500                1500                 eos-spine3   SWEET!!
+Ethernet1 1500                1500                 eos-spine3   SWEET!!
+Ethernet2 1500                1500                 eos-spine3   SWEET!!
+Ethernet2 1500                1500                 eos-spine3   SWEET!!
+
+********************
+
+
+
+
+
+configured_holdtime configured_keepalive connection_state flap_count holdtime last_event    local_address          local_as remote_address         remote_as router_id  up
+------------------- -------------------- ---------------- ---------- -------- ----------    -------------          -------- --------------         --------- ---------  --
+180                 60                   Established      0          90       RecvKeepAlive 10.2.6.1               65002    10.2.6.0               65000     10.255.0.8 True
+180                 60                   Established      0          90       RecvKeepAlive 10.2.7.1               65002    10.2.7.0               65000     10.255.0.9 True
+180                 60                   Established      0          90       RecvKeepAlive 2001:db8::10:2:6:1     65002    2001:db8::10:2:6:0     65000     10.255.0.8 True
+180                 60                   Established      0          90       RecvKeepAlive 2001:db8::10:2:7:1     65002    2001:db8::10:2:7:0     65000     10.255.0.9 True
+180                 60                   Established      0          180      RecvKeepAlive 10.17.6.0              65002    10.17.6.1              65021     10.17.33.3 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:2:0:10:17:6:0 65002    2001:db8:2:0:10:17:6:1 65021     10.17.33.3 True
+180                 60                   Established      0          180      RecvKeepAlive 10.17.7.0              65002    10.17.7.1              65022     10.17.33.4 True
+180                 60                   Established      0          180      RecvKeepAlive 2001:db8:2:0:10:17:7:0 65002    2001:db8:2:0:10:17:7:1 65022     10.17.33.4 True
+
+********************
+CONFIG TESTS
+********************
++---------------+----------+
+| Available Ram |  Field   |
++---------------+----------+
+|     Status    | All okay |
+| Available_Ram | 1828316  |
++---------------+----------+
+********************
+Mismatch Details
+********************
+interface local_interface_mtu remote_interface_mtu segment_name Mismatch Details
+--------- ------------------- -------------------- ------------ ----------------
+Ethernet3 1500                1514                 eos-spine4   MTU interface Mismatch
+Ethernet4 1500                1514                 eos-spine4   MTU interface Mismatch
+Ethernet3 1500                1514                 eos-spine4   MTU interface Mismatch
+Ethernet4 1500                1514                 eos-spine4   MTU interface Mismatch
+Ethernet1 1500                1500                 eos-spine4   SWEET!!
+Ethernet1 1500                1500                 eos-spine4   SWEET!!
+Ethernet2 1500                1500                 eos-spine4   SWEET!!
+Ethernet2 1500                1500                 eos-spine4   SWEET!!
+
+********************
+
+
+
+
+
+configured_holdtime configured_keepalive connection_state flap_count holdtime last_event    local_address        local_as remote_address       remote_as router_id  up
+------------------- -------------------- ---------------- ---------- -------- ----------    -------------        -------- --------------       --------- ---------  --
+90                  30                   Established      0          90       RecvKeepAlive 10.255.0.7           65000    10.255.0.8           65000     10.255.0.8 True
+90                  30                   Established      0          90       RecvKeepAlive 10.255.0.7           65000    10.255.0.9           65000     10.255.0.9 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:255:0:7 65000    2001:db8::10:255:0:8 65000     10.255.0.8 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:255:0:7 65000    2001:db8::10:255:0:9 65000     10.255.0.9 True
+
+********************
+CONFIG TESTS
+********************
++---------------+---------------+
+| Available Ram |     Field     |
++---------------+---------------+
+|     Status    | Ram Exceeding |
+| Available_Ram |      4073     |
++---------------+---------------+
+********************
+Mismatch Details
+********************
+interface  local_interface_mtu remote_interface_mtu segment_name Mismatch Details
+---------  ------------------- -------------------- ------------ ----------------
+ge-0/0/0.0 1514                1514                 vmx7         SWEET!!
+ge-0/0/1.0 1514                1514                 vmx7         SWEET!!
+ge-0/0/0.0 1514                1514                 vmx7         SWEET!!
+ge-0/0/1.0 1514                1514                 vmx7         SWEET!!
+
+********************
+
+
+
+
+
+configured_holdtime configured_keepalive connection_state flap_count holdtime last_event    local_address        local_as remote_address       remote_as router_id  up
+------------------- -------------------- ---------------- ---------- -------- ----------    -------------        -------- --------------       --------- ---------  --
+90                  30                   Established      0          90       RecvKeepAlive 10.255.0.8           65000    10.255.0.7           65000     10.255.0.7 True
+90                  30                   Established      0          90       RecvKeepAlive 10.255.0.8           65000    10.255.0.9           65000     10.255.0.9 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:255:0:8 65000    2001:db8::10:255:0:7 65000     10.255.0.7 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:255:0:8 65000    2001:db8::10:255:0:9 65000     10.255.0.9 True
+90                  30                   Established      0          90       RecvKeepAlive 10.2.0.0             65000    10.2.0.1             65001     10.16.32.1 True
+90                  30                   Established      0          90       RecvKeepAlive 10.2.2.0             65000    10.2.2.1             65001     10.16.32.2 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:2:0:0   65000    2001:db8::10:2:0:1   65001     10.16.32.1 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:2:2:0   65000    2001:db8::10:2:2:1   65001     10.16.32.2 True
+90                  30                   Established      0          90       RecvKeepAlive 10.2.4.0             65000    10.2.4.1             65002     10.17.32.3 True
+90                  30                   Established      0          90       RecvKeepAlive 10.2.6.0             65000    10.2.6.1             65002     10.17.32.4 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:2:4:0   65000    2001:db8::10:2:4:1   65002     10.17.32.3 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:2:6:0   65000    2001:db8::10:2:6:1   65002     10.17.32.4 True
+
+********************
+CONFIG TESTS
+********************
++---------------+---------------+
+| Available Ram |     Field     |
++---------------+---------------+
+|     Status    | Ram Exceeding |
+| Available_Ram |      4073     |
++---------------+---------------+
+********************
+Mismatch Details
+********************
+interface  local_interface_mtu remote_interface_mtu segment_name Mismatch Details
+---------  ------------------- -------------------- ------------ ----------------
+ge-0/0/0.0 1514                1514                 vmx8         SWEET!!
+ge-0/0/0.0 1514                1514                 vmx8         SWEET!!
+ge-0/0/0.0 1514                1514                 vmx8         SWEET!!
+ge-0/0/0.0 1514                1514                 vmx8         SWEET!!
+ge-0/0/1.0 1514                1514                 vmx8         SWEET!!
+ge-0/0/1.0 1514                1514                 vmx8         SWEET!!
+ge-0/0/1.0 1514                1514                 vmx8         SWEET!!
+ge-0/0/1.0 1514                1514                 vmx8         SWEET!!
+ge-0/0/3.0 1514                1514                 vmx8         SWEET!!
+ge-0/0/3.0 1514                1514                 vmx8         SWEET!!
+ge-0/0/3.0 1514                1514                 vmx8         SWEET!!
+ge-0/0/3.0 1514                1514                 vmx8         SWEET!!
+
+********************
+
+
+
+
+
+configured_holdtime configured_keepalive connection_state flap_count holdtime last_event    local_address        local_as remote_address       remote_as router_id  up
+------------------- -------------------- ---------------- ---------- -------- ----------    -------------        -------- --------------       --------- ---------  --
+90                  30                   Established      0          90       RecvKeepAlive 10.255.0.9           65000    10.255.0.7           65000     10.255.0.7 True
+90                  30                   Established      0          90       RecvKeepAlive 10.255.0.9           65000    10.255.0.8           65000     10.255.0.8 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:255:0:9 65000    2001:db8::10:255:0:7 65000     10.255.0.7 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:255:0:9 65000    2001:db8::10:255:0:8 65000     10.255.0.8 True
+90                  30                   Established      0          90       RecvKeepAlive 10.2.1.0             65000    10.2.1.1             65001     10.16.32.1 True
+90                  0                    Active           0          0        Start         10.2.3.0             65000    10.2.3.1             65001                False
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:2:1:0   65000    2001:db8::10:2:1:1   65001     10.16.32.1 True
+90                  0                    Active           0          0        Start         2001:db8::10:2:3:0   65000    2001:db8::10:2:3:1   65001                False
+90                  30                   Established      0          90       RecvKeepAlive 10.2.5.0             65000    10.2.5.1             65002     10.17.32.3 True
+90                  30                   Established      0          90       RecvKeepAlive 10.2.7.0             65000    10.2.7.1             65002     10.17.32.4 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:2:5:0   65000    2001:db8::10:2:5:1   65002     10.17.32.3 True
+90                  30                   Established      0          90       RecvKeepAlive 2001:db8::10:2:7:0   65000    2001:db8::10:2:7:1   65002     10.17.32.4 True
+
+********************
+CONFIG TESTS
+********************
++---------------+---------------+
+| Available Ram |     Field     |
++---------------+---------------+
+|     Status    | Ram Exceeding |
+| Available_Ram |      2025     |
++---------------+---------------+
+********************
+Mismatch Details
+********************
+interface  local_interface_mtu remote_interface_mtu segment_name Mismatch Details
+---------  ------------------- -------------------- ------------ ----------------
+ge-0/0/1.0 1514                1514                 vmx9         SWEET!!
+ge-0/0/1.0 1514                1514                 vmx9         SWEET!!
+ge-0/0/1.0 1514                1514                 vmx9         SWEET!!
+ge-0/0/1.0 1514                1514                 vmx9         SWEET!!
+ge-0/0/0.0 1514                1514                 vmx9         SWEET!!
+ge-0/0/0.0 1514                1514                 vmx9         SWEET!!
+ge-0/0/3.0 1514                1514                 vmx9         SWEET!!
+ge-0/0/3.0 1514                1514                 vmx9         SWEET!!
+ge-0/0/3.0 1514                1514                 vmx9         SWEET!!
+ge-0/0/3.0 1514                1514                 vmx9         SWEET!!
+
+********************
