@@ -1,6 +1,5 @@
 '''
 Python Version: 2.7
-Author: arohi.gupta@colorado.edu
 Nanog 72 Hackathon
 '''
 
