@@ -7,7 +7,7 @@ Nanog 72 Hackathon
 class Formatter():
     def format_as_table(data,
                         keys,
-                        header=None):
+                        header=None,self):
 
     """Takes a list of dictionaries, formats the data, and returns
     the formatted data as a text table.
@@ -54,7 +54,7 @@ class Formatter():
             formatted_data += format % tuple(data_to_format)
         return formatted_data
 
-    def pretty(shorten):
+    def pretty(shorten,self):
             """Takes a dictionary, formats the data, and returns
             the formatted data as a pretty table.
 
