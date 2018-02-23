@@ -7,10 +7,7 @@ from napalm import get_network_driver
 
 
 class Napalm_hack():
-    def __init__(self, arg):
-        self.arg = arg
-
-    def get_remote_interface_mtu(driver_type, interface_name, device_name):
+    def get_remote_interface_mtu(driver_type, interface_name, device_name,self):
         """
         This function returns the mtu on the local interface and remote interface
         input - driver_type == Junos or eos, interface_name= outgoing interface, device_name=ip or hostname of the device
@@ -56,7 +53,7 @@ class Napalm_hack():
         return result
 
 
-    def outgoing_interface(out_data,routerid,segment_device_type,segment_name):
+    def outgoing_interface(out_data,routerid,segment_device_type,segment_name,self):
 
     	k=re.compile(r'{0}.*'.format(routerid))
     	finalkey=filter(k.match,out_data.keys())
@@ -79,7 +76,7 @@ class Napalm_hack():
     	final['Mismatch Details']=mismatch
     	return final
 
-    def flatten(details):
+    def flatten(details,self):
     	shorten={}
     	inner={}
     	listinner=[]
@@ -105,7 +102,7 @@ class Napalm_hack():
     		shorten[k][as_detail]=listinner
     	return shorten,listinner
 
-        def compare_ram(ram):
+        def compare_ram(ram,self):
             '''
             This Function checks if the RAM is exceeding >> 70 percent of the total ram.
             Required Parameters:
